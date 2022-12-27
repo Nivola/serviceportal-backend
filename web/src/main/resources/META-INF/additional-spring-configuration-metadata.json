@@ -1,0 +1,15 @@
+/*-
+ * ========================LICENSE_START=================================
+ * Nivola Web
+ * %%
+ * Copyright (C) 2022 CSI Piemonte
+ * %%
+ * SPDX-FileCopyrightText: Copyright 2022 | CSI Piemonte
+ * SPDX-License-Identifier: EUPL-1.2
+ * =========================LICENSE_END==================================
+ */
+{"properties": [{
+  "name": "remedyApi.api-url",
+  "type": "java.lang.String",
+  "description": "A description for 'remedyApi.api-url'"
+}]}

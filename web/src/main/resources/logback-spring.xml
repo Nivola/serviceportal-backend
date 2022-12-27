@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ========================LICENSE_START=================================
+  Nivola Web
+  %%
+  Copyright (C) 2022 CSI Piemonte
+  %%
+  SPDX-FileCopyrightText: Copyright 2022 | CSI Piemonte
+  SPDX-License-Identifier: EUPL-1.2
+  =========================LICENSE_END==================================
+  -->
+
+
+<configuration>
+	<include
+		resource="org/springframework/boot/logging/logback/base.xml" />
+
+	<!-- Appender per l'applicazione (gateway) con rolling giornaliero -->
+	<appender name="nivolasp" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>/home/wildfly/wildfly/standalone/log/nivolasp.log</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>/home/wildfly/wildfly/standalone/log/nivolasp.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>7</maxHistory>
+		</rollingPolicy>
+		<append>true</append>
+		<encoder>
+			<pattern>%d [%thread] %clr(%-5level [%logger{0} :: %method]) - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="appenderAccesso" class="ch.qos.logback.core.FileAppender">
+		<file>/home/wildfly/wildfly/standalone/log/accessi.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- Appender per gli errori non gestiti sull'applicazione (gateway) con 
+		rolling giornaliero -->
+	<appender name="errors"	class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>/home/wildfly/wildfly/standalone/log/errors.log</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>/home/wildfly/wildfly/standalone/log/errors.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<maxHistory>7</maxHistory>
+		</rollingPolicy>
+		<append>true</append>
+		<encoder>
+			<pattern>%d [%thread] %-5level : %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- Logger applicativo -->
+	<logger name="it.csi.nivola.nivolasp" level="#logback.loglevel#" additivity="false">
+		<appender-ref ref="nivolasp" />
+	</logger>
+
+	<!-- Logger per gli errori di sistema -->
+	<logger name="it.csi.nivola.error" level="#logback.loglevel#">
+		<appender-ref ref="nivolasp" />
+		<appender-ref ref="errors" />
+	</logger>
+
+	<!-- Logger per accesso utente -->
+	<logger name="accesso" level="#logback.loglevel#" additivity="false">
+		<appender-ref ref="appenderAccesso" />
+	</logger>
+
+	<logger name="org.hibernate.SQL" level="DEBUG" additivity="false">
+		<appender-ref ref="nivolasp" />
+	</logger>
+
+	<logger name="org.hibernate.validator" level="WARN" additivity="false">
+		<appender-ref ref="nivolasp" />
+	</logger>
+
+	<logger name="org.hibernate" level="WARN" additivity="false">
+		<appender-ref ref="nivolasp" />
+	</logger>
+
+
+	<logger name="org.hibernate.ejb.HibernatePersistence" level="DEBUG" additivity="false">
+		<appender-ref ref="nivolasp" />
+	</logger>
+
+
+	<logger name="com.amazonaws" level="INFO" additivity="false">
+		<appender-ref ref="nivolasp" />
+	</logger>
+
+
+	<logger name="io.github.jhipster" level="INFO" />
+	<logger name="com.arjuna" level="INFO" />
+	<logger name="javax.activation" level="WARN" />
+	<logger name="javax.mail" level="WARN" />
+	<logger name="javax.xml.bind" level="WARN" />
+	<logger name="ch.qos.logback" level="WARN" />
+	<logger name="com.codahale.metrics" level="WARN" />
+	<logger name="com.ryantenney" level="WARN" />
+	<logger name="com.sun" level="WARN" />
+	<logger name="com.zaxxer" level="WARN" />
+	<logger name="io.undertow" level="WARN" />
+	<logger name="io.undertow.websockets.jsr" level="ERROR" />
+	<logger name="org.ehcache" level="WARN" />
+	<logger name="org.apache" level="WARN" />
+	<logger name="org.apache.catalina.startup.DigesterFactory" level="OFF" />
+	<logger name="org.bson" level="WARN" />
+	<logger name="org.springframework" level="WARN">
+		<appender-ref ref="nivolasp" />
+	</logger>
+	<logger name="org.springframework.boot.SpringApplication" level="INFO" additivity="false">
+    	<appender-ref ref="nivolasp"/>
+	</logger>
+	<logger name="org.thymeleaf" level="WARN" />
+	<logger name="org.xnio" level="WARN" />
+	<logger name="springfox" level="WARN" />
+	<logger name="sun.rmi" level="WARN" />
+	<logger name="liquibase" level="WARN" />
+	<logger name="LiquibaseSchemaResolver" level="INFO" />
+	<logger name="sun.rmi.transport" level="WARN" />
+	<logger name="javax.enterprise.resource.webcontainer.jsf" level="WARN" />
+	<logger name="org.jboss.resteasy" level="INFO" />
+
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+		<resetJUL>true</resetJUL>
+	</contextListener>
+</configuration>

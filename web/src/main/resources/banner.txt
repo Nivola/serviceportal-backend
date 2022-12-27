@@ -1,0 +1,10 @@
+
+${AnsiColor.BRIGHT_CYAN}.__   __.  __  ____    ____  ______    __          ___      
+${AnsiColor.BRIGHT_CYAN}|  \ |  | |  | \   \  /   / /  __  \  |  |        /   \     
+${AnsiColor.BRIGHT_CYAN}|   \|  | |  |  \   \/   / |  |  |  | |  |       /  ^  \    
+${AnsiColor.BRIGHT_CYAN}|  . `  | |  |   \      /  |  |  |  | |  |      /  /_\  \   
+${AnsiColor.BRIGHT_CYAN}|  |\   | |  |    \    /   |  `--'  | |  `----./  _____  \  
+${AnsiColor.BRIGHT_CYAN}|__| \__| |__|     \__/     \______/  |_______/__/     \__\ 
+
+${AnsiColor.BRIGHT_BLUE}:: Running Spring Boot ${spring-boot.version} ::
+${AnsiColor.DEFAULT}

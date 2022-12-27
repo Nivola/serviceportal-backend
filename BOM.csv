@@ -1,0 +1,92 @@
+name*,version*,license*,vendor/community,end-of-support,dependencies,language
+activation,1.1,COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) V1.0,,,,java
+android-json,0.0.20131108.vaadin1,Apache 2.0,,,,java
+antlr,2.7.7,BSD 3-CLAUSE,,,,java
+aopalliance,1.0,PUBLIC DOMAIN,,,,java
+aspectjweaver,1.8.9,EPL 1.0,,,,java
+aws-java-sdk-core,1.11.586,Apache 2.0,,,,java
+aws-java-sdk-kms,1.11.586,Apache 2.0,,,,java
+aws-java-sdk-s3,1.11.586,Apache 2.0,,,,java
+bcpkix-jdk15on,1.59,BOUNCY CASTLE LICENCE,,,,java
+bcprov-jdk15on,1.59,BOUNCY CASTLE LICENCE,,,,java
+byte-buddy,1.6.6,Apache 2.0,,,,java
+classmate,1.3.3,Apache 2.0,,,,java
+commons-codec,1.10,Apache 2.0,,,,java
+commons-io,2.5,Apache 2.0,,,,java
+commons-lang3,3.5,Apache 2.0,,,,java
+commons-logging,1.1.3,Apache 2.0,,,,java
+dom4j,1.6.1,BSD 3-CLAUSE,,,,java
+hibernate-commons-annotations,5.0.1.Final,GNU LESSER GENERAL PUBLIC LICENSE,,,,java
+hibernate-core,5.2.8.Final,GNU LESSER GENERAL PUBLIC LICENSE,,,,java
+hibernate-entitymanager,5.2.8.Final,GNU LESSER GENERAL PUBLIC LICENSE,,,,java
+hibernate-jpa-2.1-api,1.0.0.Final,"ECLIPSE PUBLIC LICENSE (EPL), VERSION 1.0,ECLIPSE DISTRIBUTION LICENSE (EDL), VERSION 1.0",,,,java
+hibernate-validator,5.3.4.Final,BSD 3-CLAUSE,,,,java
+HikariCP,2.6.0,Apache 2.0,,,,java
+httpclient,4.5.3,Apache 2.0,,,,java
+httpcore,4.4.6,Apache 2.0,,,,java
+ion-java,1.0.2,"THE APACHE LICENSE, VERSION 2.0",,,,java
+itext,2.1.7,MOZILLA PUBLIC LICENSE,,,,java
+jackson-annotations,2.8.0,Apache 2.0,,,,java
+jackson-core,2.8.7,Apache 2.0,,,,java
+jackson-databind,2.8.7,Apache 2.0,,,,java
+jackson-dataformat-cbor,2.8.7,Apache 2.0,,,,java
+jackson-datatype-jsr310,2.8.7,Apache 2.0,,,,java
+jandex,2.0.3.Final,Apache 2.0,,,,java
+javassist,3.21.0-GA,"MPL 1.1,LGPL 2.1,Apache 2.0",,,,java
+javax.el,3.0.0,"CDDL 1.0,GPL 2.0",,,,java
+javax.mail,1.5.6,"CDDL 1.0,GPL 2.0",,,,java
+javax.servlet-api,3.1.0,"CDDL 1.0,GPL 2.0",,,,java
+javax.transaction-api,1.2,"CDDL 1.0,GPL 2.0",,,,java
+jboss-annotations-api_1.2_spec,1.0.0.Final,"CDDL 1.0,GPL 2.0",,,,java
+jboss-logging,3.3.0.Final,Apache 2.0,,,,java
+jboss-transaction-api_1.2_spec,1.0.1.Final,"CDDL 1.0,GPL 2.0",,,,java
+jboss-websocket-api_1.1_spec,1.1.0.Final,"CDDL 1.0,GPL 2.0",,,,java
+jcl-over-slf4j,1.7.24,MIT,,,,java
+jjwt,0.9.0,Apache 2.0,,,,java
+jmespath-java,1.11.586,Apache 2.0,,,,java
+joda-time,2.9.7,Apache 2.0,,,,java
+jul-to-slf4j,1.7.24,MIT,,,,java
+log4j-over-slf4j,1.7.24,APACHE SOFTWARE LICENSES,,,,java
+logback-classic,1.1.11,"EPL 1.0, LGPL 2.1",,,,java
+logback-core,1.1.11,"EPL 1.0, LGPL 2.1",,,,java
+mapstruct,1.4.2.Final,Apache 2.0,,,,java
+mariadb-java-client,2.6.0,LGPL-2.1,,,,java
+slf4j-api,1.7.24,MIT,,,,java
+spring-aop,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-aspects,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-beans,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-boot,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-autoconfigure,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-configuration-processor,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-loader-tools,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-aop,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-data-jpa,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-jdbc,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-logging,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-mail,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-security,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-undertow,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-boot-starter-web,1.5.2.RELEASE,Apache 2.0,,,,java
+spring-context,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-context-support,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-core,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-data-commons,1.13.1.RELEASE,Apache 2.0,,,,java
+spring-data-jpa,1.11.1.RELEASE,Apache 2.0,,,,java
+spring-expression,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-jdbc,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-orm,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-security-config,4.2.2.RELEASE,Apache 2.0,,,,java
+spring-security-core,4.2.2.RELEASE,Apache 2.0,,,,java
+spring-security-data,4.2.2.RELEASE,Apache 2.0,,,,java
+spring-security-web,4.2.2.RELEASE,Apache 2.0,,,,java
+spring-tx,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-web,4.3.7.RELEASE,Apache 2.0,,,,java
+spring-webmvc,4.3.7.RELEASE,Apache 2.0,,,,java
+swagger-annotations,1.5.23,Apache 2.0,,,,java
+undertow-core,1.4.11.Final,Apache 2.0,,,,java
+undertow-servlet,1.4.11.Final,Apache 2.0,,,,java
+undertow-websockets-jsr,1.4.11.Final,Apache 2.0,,,,java
+validation-api,1.1.0.Final,Apache 2.0,,,,java
+xnio-api,3.3.6.Final,"CC0 1.0, Public",,,,java
+xnio-nio,3.3.6.Final,"CC0 1.0, Public",,,,java

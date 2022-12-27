@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>it.csi.nivola</groupId>
+		<artifactId>nivolabackend</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>web</artifactId>
+	<packaging>war</packaging>
+	<name>Nivola Web</name>
+	<description>Applicazione web del serviceportal</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>it.csi.nivola</groupId>
+			<artifactId>cmpapi</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>it.csi.nivola</groupId>
+			<artifactId>dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>nivolaspsrv</finalName>
+		<plugins>
+			<!-- Permette di costruire un jar eseguivile con java -jar SCOMMENTARE SOLO QUANDO SI DECIDERA' DI DOCKERIZZARE L'APLICAZIONE
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<delimiters>
+						<delimiter>#</delimiter>
+					</delimiters>
+					<useDefaultDelimiters>false</useDefaultDelimiters>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.2</version><!--$NO-MVN-MAN-VER$-->
+				<configuration>
+					<webResources>
+						<resource>
+							<directory>src/main/webapp/</directory>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+			<!--<plugin> DECOMMETARE PER ATTIVARE PLUGIN PER JAR ESEGUIBILE, QUANDO SI ABBANDONERA' WILDFLY
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>-->
+		</plugins>
+		<!-- Abilita il filtro delle risorse per il replace (di default delimitati 
+			con @ ... @ che va bene nei file di properties, cambiato in # .. # per non 
+			dare problemi nello yaml -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+	<profiles>
+		<profile>
+			<id>local</id>
+			<properties>
+				<locale>true</locale>
+				<!-- log configuration -->
+				<logback.loglevel>DEBUG</logback.loglevel>
+				<pathToFrontEnd>D:/workspace-csi/nivola/serviceportal-webres/target/local/www/</pathToFrontEnd>
+				<spring.profiles.active>dev</spring.profiles.active>
+			</properties>
+		</profile>
+	</profiles>
+</project>

@@ -1,0 +1,144 @@
+This file is based on or incorporates material from the projects listed below
+(collectively, "Third Party Code").
+
+CSI-Piemonte is not the original author of the Third Party Code.
+The original copyright notice and the license, under which CSI-Piemonte received such Third Party Code,
+are set forth below. You can find the original source code at the link set hereafter.
+Please refer to the accompanying credits file for additional notices.
+
+[Eclipse Public License - v 1.0](http://www.eclipse.org/legal/epl-v10.html)
+[GNU Lesser General Public License](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+logback-classic,1.1.11\
+logback-core,1.1.11
+
+[Public Domain](http://repository.jboss.org/licenses/cc0-1.0.txt)\
+xnio-api,3.3.6.Final\
+xnio-nio,3.3.6.Final
+
+[Eclipse Public License (EPL), Version 1.0](http://www.eclipse.org/legal/epl-v10.html)\
+[Eclipse Distribution License (EDL), Version 1.0](http://www.eclipse.org/org/documents/edl-v10.php)\
+hibernate-jpa-2.1-api,1.0.0.Final
+
+[The Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt)\
+ion-java,1.0.2
+
+[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)\
+android-json,0.0.20131108.vaadin1\
+aws-java-sdk-core,1.11.586\
+aws-java-sdk-kms,1.11.586\
+aws-java-sdk-s3,1.11.586\
+byte-buddy,1.6.6\
+classmate,1.3.3\
+commons-codec,1.10\
+commons-io,2.5\
+commons-lang3,3.5\
+commons-logging,1.1.3\
+HikariCP,2.6.0\
+httpclient,4.5.3\
+httpcore,4.4.6\
+jackson-annotations,2.8.0\
+jackson-core,2.8.7\
+jackson-databind,2.8.7\
+jackson-dataformat-cbor,2.8.7\
+jackson-datatype-jsr310,2.8.7\
+jandex,2.0.3.Final\
+jboss-logging,3.3.0.Final\
+jjwt,0.9.0\
+jmespath-java,1.11.586\
+joda-time,2.9.7\
+mapstruct,1.4.2.Final\
+spring-aop,4.3.7.RELEASE\
+spring-aspects,4.3.7.RELEASE\
+spring-beans,4.3.7.RELEASE\
+spring-boot,1.5.2.RELEASE\
+spring-boot-autoconfigure,1.5.2.RELEASE\
+spring-boot-configuration-processor,1.5.2.RELEASE\
+spring-boot-loader-tools,1.5.2.RELEASE\
+spring-boot-starter,1.5.2.RELEASE\
+spring-boot-starter-aop,1.5.2.RELEASE\
+spring-boot-starter-data-jpa,1.5.2.RELEASE\
+spring-boot-starter-jdbc,1.5.2.RELEASE\
+spring-boot-starter-logging,1.5.2.RELEASE\
+spring-boot-starter-mail,1.5.2.RELEASE\
+spring-boot-starter-security,1.5.2.RELEASE\
+spring-boot-starter-undertow,1.5.2.RELEASE\
+spring-boot-starter-web,1.5.2.RELEASE\
+spring-context,4.3.7.RELEASE\
+spring-context-support,4.3.7.RELEASE\
+spring-core,4.3.7.RELEASE\
+spring-data-commons,1.13.1.RELEASE\
+spring-data-jpa,1.11.1.RELEASE\
+spring-expression,4.3.7.RELEASE\
+spring-jdbc,4.3.7.RELEASE\
+spring-orm,4.3.7.RELEASE\
+spring-security-config,4.2.2.RELEASE\
+spring-security-core,4.2.2.RELEASE\
+spring-security-data,4.2.2.RELEASE\
+spring-security-web,4.2.2.RELEASE\
+spring-tx,4.3.7.RELEASE\
+spring-web,4.3.7.RELEASE\
+spring-webmvc,4.3.7.RELEASE\
+swagger-annotations,1.5.23\
+undertow-core,1.4.11.Final\
+undertow-servlet,1.4.11.Final\
+undertow-websockets-jsr,1.4.11.Final\
+validation-api,1.1.0.Final
+
+[Apache Software Licenses](http://www.apache.org/licenses/LICENSE-2.0.txt)
+log4j-over-slf4j,1.7.24
+
+[Bouncy Castle Licence](http://www.bouncycastle.org/licence.html)
+bcpkix-jdk15on,1.59\
+bcprov-jdk15on,1.59
+
+[BSD 3-CLAUSE](https://opensource.org/licenses/BSD-3-Clause)\
+antlr,2.7.7\
+dom4j,1.6.1\
+hibernate-validator,5.3.4.Final
+
+[Common Development and Distribution License (CDDL) v1.0](https://glassfish.dev.java.net/public/CDDLv1.0.html)\
+activation,1.1
+
+[EPL 1.0](https://www.eclipse.org/legal/epl-v10.html)\
+aspectjweaver,1.8.9\
+
+[GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl-2.1.html)
+hibernate-commons-annotations,5.0.1.Final\
+hibernate-core,5.2.8.Final\
+hibernate-entitymanager,5.2.8.Final
+
+[CDDL + GPLv2 with classpath exception](https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html)\
+javax.el,3.0.0\
+javax.servlet-api,3.1.0\
+javax.transaction-api,1.2
+
+[CDDL/GPLv2+CE](https://glassfish.java.net/public/CDDL+GPL_1_1.html)\
+javax.mail,1.5.6
+
+[CDDL or GPLv2 with exceptions](https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html)\
+jboss-annotations-api_1.2_spec,1.0.0.Final
+
+[Common Development and Distribution License](http://repository.jboss.org/licenses/cddl.txt)\
+[GNU General Public License, Version 2 with the Classpath Exception](http://repository.jboss.org/licenses/gpl-2.0-ce.txt)\
+jboss-transaction-api_1.2_spec,1.0.1.Final\
+jboss-websocket-api_1.1_spec,1.1.0.Final
+
+[MPL 1.1](http://www.mozilla.org/MPL/MPL-1.1.html)\
+[LGPL 2.1](http://www.gnu.org/licenses/lgpl-2.1.html)\
+[Apache License 2.0](http://www.apache.org/licenses/)\
+javassist,3.21.0-GA
+
+LGPL-2.1\
+mariadb-java-client,2.6.0
+
+[MIT](https://opensource.org/licenses/MIT)\
+jcl-over-slf4j,1.7.24\
+jul-to-slf4j,1.7.24\
+slf4j-api,1.7.24
+
+[Mozilla Public License](http://www.mozilla.org/MPL/MPL-1.1.html)\
+itext,2.1.7
+
+PUBLIC DOMAIN\
+aopalliance,1.0
+
